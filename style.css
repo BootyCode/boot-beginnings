@@ -1,0 +1,80 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Nixie One", cursive;
+  background: url(/assets/rye-front.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 1.5rem;
+}
+h1 {
+  margin-top: 0.7rem;
+  font-size: 5rem;
+  background: -webkit-linear-gradient(
+    #3b3b3b 20%,
+    #1bffbb75,
+    #1bffbb75 70%,
+    #3b3b3b
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+
+  letter-spacing: 0.5rem;
+}
+
+.line {
+  border-color: #424242;
+  border-width: 1.5px;
+  width: 65px;
+  box-shadow: 5px 5px 5px #03fff2;
+  -moz-box-shadow: 3px 3px 5px #03fff2;
+  box-shadow: 3px 3px 5px #03fff2;
+  transition: all 0.4s;
+}
+.btn {
+  padding: 1rem 2.5rem;
+  margin-top: 10px;
+  font-size: 1rem;
+  background: #424242;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  -webkit-box-shadow: 3px 3px 10px #03fff2;
+  -moz-box-shadow: 3px 3px 10px #03fff2;
+  box-shadow: 3px 3px 10px #03fff2;
+  transition: all 0.4s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.btn-line:hover .btn {
+  transform: scale(1.1);
+  -webkit-box-shadow: 3px 3px 10px #fff;
+  -moz-box-shadow: 3px 3px 10px #fff;
+  box-shadow: 3px 3px 10px #fff;
+}
+.btn-line:hover .line {
+  transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 5px #fff;
+  -moz-box-shadow: 5px 5px 5px #fff;
+  box-shadow: 5px 5px 5px #fff;
+}
+.buffer {
+  height: 7rem;
+}
+.btn-line {
+}
